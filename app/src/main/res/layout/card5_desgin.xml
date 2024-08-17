@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/card5_edit"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="Save the date"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="16dp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="The wedding of"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/textGroomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/beau_rivage"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="#be6139"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/beau_rivage"
+            android:gravity="center_horizontal"
+            android:text="&amp;"
+            android:textColor="#945910"
+            android:textSize="34dp" />
+
+        <TextView
+            android:id="@+id/textBrideName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/beau_rivage"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="#be6139"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="we invite you to our wedding"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ovo"
+            android:gravity="center_horizontal"
+            android:text="Venu"
+            android:textAllCaps="true"
+            android:textColor="#be6139"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

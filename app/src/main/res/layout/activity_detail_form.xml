@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context=".DetailFormActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Wedding Detail" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialToolbar">
+
+                <TextView
+                    android:id="@+id/textViewTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:padding="5dp"
+                    android:text="Bride Details"
+                    android:textColor="#763F21"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="First Name"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/bride_fname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Last Name"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/bride_lname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textViewSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:padding="5dp"
+                    android:text="Groom Details"
+                    android:textColor="#763F21"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="First Name"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/groom_fname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Last Name"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/groom_lname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <TextView
+                    android:id="@+id/textViewFunction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:padding="5dp"
+                    android:text="Functions Details"
+                    android:textColor="#763F21"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Function Name"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/function1_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Function Venue"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/function1_venue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:fontFamily="@font/alike"
+                        android:inputType="textPostalAddress"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Function Date"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/function1_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/alike"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:fontFamily="@font/alike"
+                        android:text="Function Time"
+                        android:textColor="#E2AB07"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/function1_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/edit_text_background"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/alike"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/preview_button"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/alike"
+                android:gravity="center"
+                android:text="PREVIEW"
+                android:textColor="#FA6C00"
+                app:strokeColor="#FA6C00" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/saveImage"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableStart="@drawable/image"
+        android:text="Save as Image"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alike"
+        android:background="@drawable/option_background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/savePdf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawableStart="@drawable/pdf_file"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alike"
+        android:background="@drawable/option_background"
+        android:gravity="center"
+        android:text="Save as PDF"
+        android:textSize="18dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/saveImage"
+        app:layout_constraintStart_toStartOf="@+id/saveImage"
+        app:layout_constraintTop_toBottomOf="@+id/saveImage" />
+
+
+    <TextView
+        android:id="@+id/shareImage"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="7dp"
+        android:drawableStart="@drawable/image_share_"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alike"
+        android:background="@drawable/option_background"
+        android:gravity="center"
+        android:text="Share as Image"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/savePdf"
+        app:layout_constraintStart_toStartOf="@+id/savePdf"
+        app:layout_constraintTop_toBottomOf="@+id/savePdf" />
+
+
+    <TextView
+        android:id="@+id/sharePDF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="7dp"
+        android:drawableStart="@drawable/pdf_share"
+        android:gravity="center"
+        android:text="Share as PDF"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alike"
+        android:padding="7dp"
+        android:background="@drawable/option_background"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/shareImage"
+        app:layout_constraintStart_toStartOf="@+id/shareImage"
+        app:layout_constraintTop_toBottomOf="@+id/shareImage" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
